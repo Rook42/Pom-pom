@@ -1,0 +1,49 @@
+{
+  "history": [
+    {
+      "name": "@string/pomodoro",
+      "icon": "@drawable/tomato_empty",
+      "time": "7:09-7:29"
+    },
+    {
+      "name": "@string/long_break",
+      "icon": "@drawable/time_smile",
+      "time": "6:54-7:09"
+    },
+    {
+      "name": "@string/pomodoro",
+      "icon": "@drawable/tomato_empty",
+      "time": "6:34-6:54"
+    },
+    {
+      "name": "@string/short_break",
+      "icon": "@drawable/time",
+      "time": "6:29-6:34"
+    },
+    {
+      "name": "@string/pomodoro",
+      "icon": "@drawable/tomato_empty",
+      "time": "6:09-6:29"
+    },
+    {
+      "name": "@string/short_break",
+      "icon": "@drawable/time",
+      "time": "6:04-6:09"
+    },
+    {
+      "name": "@string/pomodoro",
+      "icon": "@drawable/tomato_empty",
+      "time": "5:44-6:04"
+    },
+    {
+      "name": "@string/short_break",
+      "icon": "@drawable/time",
+      "time": "5:39-5:44"
+    },
+    {
+      "name": "@string/pomodoro",
+      "icon": "@drawable/tomato_empty",
+      "time": "5:19-5:39"
+    }
+  ]
+}

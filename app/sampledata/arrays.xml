@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!-- this is mock data for recyclerview pending implementation of backend w/ Rooms -->
+<resources>
+
+    <string-array name="mockHistoryNames">
+        <item>Pomodoro</item>
+        <item>Long Break</item>
+        <item>Pomodoro</item>
+        <item>Short Break</item>
+        <item>Pomodoro</item>
+        <item>Short Break</item>
+        <item>Pomodoro</item>
+        <item>Short Break</item>
+        <item>Pomodoro</item>
+    </string-array>
+
+    <string-array name="mockHistoryTimes">
+        <item>7:09-7:29</item>
+        <item>6:54-7:09</item>
+        <item>6:34-6:54</item>
+        <item>6:29-6:34</item>
+        <item>6:09-6:29</item>
+        <item>6:04-6:09</item>
+        <item>5:44-6:04</item>
+        <item>5:39-5:44</item>
+        <item>5:19-5:39</item>
+    </string-array>
+
+    <integer-array name="mockHistoryDrawables">
+        <item>@drawable/tomato_empty</item>
+        <item>@drawable/time_smile</item>
+        <item>@drawable/tomato_empty</item>
+        <item>@drawable/time</item>
+        <item>@drawable/tomato_empty</item>
+        <item>@drawable/time</item>
+        <item>@drawable/tomato_empty</item>
+        <item>@drawable/time</item>
+        <item>@drawable/tomato_empty</item>
+    </integer-array>
+    <!-- Above is mock data for xml prototyping  -->
+
+</resources>

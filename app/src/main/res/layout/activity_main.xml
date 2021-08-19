@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_dummy_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foregroundGravity="center"
+        android:indeterminate="true"
+        android:progress="0"
+        app:indicatorInset="10dp"
+        app:indicatorSize="375dp"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintDimensionRatio="1" />
+    <!--
+        <
+            android:indeterminate="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@array/progress_colors"
+            app:circularRadius="xxdp"
+            app:growMode="incoming"/>
+    -->
+    <ToggleButton
+        android:id="@+id/pomodoroButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:onClick="pomodoroButtonHandler"
+        android:text="@string/pomodoro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textOff="@string/pomodoro"
+        android:textOn="@string/pomodoro"
+        app:layout_constraintBottom_toTopOf="@+id/historyButton"
+        app:layout_constraintEnd_toStartOf="@+id/shortBreakButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton" />
+
+    <ToggleButton
+        android:id="@+id/shortBreakButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="shortBreakButtonHandler"
+        android:text="@string/short_break"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textOff="@string/short_break"
+        android:textOn="@string/short_break"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pomodoroButton"
+        app:layout_constraintEnd_toStartOf="@+id/longBreakButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pomodoroButton" />
+
+    <ToggleButton
+        android:id="@+id/longBreakButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="longBreakButtonHandler"
+        android:text="@string/pomodoro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textOff="@string/long_break"
+        android:textOn="@string/long_break"
+        app:layout_constraintBaseline_toBaselineOf="@+id/shortBreakButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shortBreakButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetButtonHandler"
+        android:text="@string/resetButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/pomodoroButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewHistory"
+        android:text="@string/action_history"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/settingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoroButton" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="viewSettings"
+        android:text="@string/action_settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
